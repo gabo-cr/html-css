@@ -1,6 +1,6 @@
 /* Header */
 .header {
-    background-color: var(--bg-main-color);
+    background-color: var(--main-color);
     box-shadow: 1px 1px 5px 0px var(--gray);
     position: sticky;
     top: 0;
@@ -8,8 +8,9 @@
 }
 /* Logo */
 .header .menu-logo {
-    max-width: 60px;
+    max-width: 50px;
     display: inline-block;
+    padding: 5px;
 }
 .header .menu-logo #logo {
     width: 100%;
@@ -20,7 +21,7 @@
     height: 100%;
     position: fixed;
     overflow: hidden;
-    background-color: var(--bg-main-color);
+    background-color: var(--main-color);
     max-height: 0;
     transition: max-height 0.3s ease-out;
 }
