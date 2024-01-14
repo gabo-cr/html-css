@@ -1,0 +1,15 @@
+:root {
+    --bg-main-color: #009bdf;
+    --text-main-color: #000;
+    font-size: 14px;
+    font-family: 'Nunito Sans';
+}
+body {
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Garamond';
+}
+a {
+    text-decoration: none;
+}
