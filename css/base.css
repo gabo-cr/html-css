@@ -1,8 +1,13 @@
 :root {
     --bg-main-color: #009bdf;
     --text-main-color: #000;
-    font-size: 14px;
+    --white: #fff;
+    --gray: #85888C;
+    font-size: 18px;
     font-family: 'Nunito Sans';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body {
     margin: 0;

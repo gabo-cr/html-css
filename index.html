@@ -6,12 +6,20 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header.css">
 </head>
 <body>
-    <header>
-        <img src="" alt="" id="logo">
-        <nav class="menu">
-            <ul>
+    <header class="header">
+        <!-- Logo -->
+        <div class="menu-logo">
+            <img src="./images/logo.png" alt="Logo de Gabriel Chávez Riera" id="logo">
+        </div>
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <!-- Menu -->
+        <nav class="nav">
+            <ul class="menu">
                 <li><a href="#">Proyectos</a></li>
                 <li><a href="#description">Descripción</a></li>
                 <li><a href="#skills">Habilidades</a></li>
