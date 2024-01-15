@@ -1,0 +1,21 @@
+footer {
+    padding: 1.2rem;
+    background-color: var(--main-color);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.footer-link .wrapper {
+    width: 32px;
+    height: 32px;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-link img {
+    width: 60%;
+}
