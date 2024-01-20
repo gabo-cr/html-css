@@ -8,14 +8,18 @@ footer {
     gap: 1rem;
 }
 .footer-link .wrapper {
-    width: 32px;
-    height: 32px;
     background-color: var(--white);
     border-radius: 50%;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
 }
-.footer-link img {
-    width: 60%;
+.footer-link .fa-brands {
+    font-size: 1.1rem;
+    color: var(--black);
+    transition: color 0.2s ease-in;
 }
