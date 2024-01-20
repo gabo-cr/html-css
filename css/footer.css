@@ -18,8 +18,17 @@ footer {
     align-items: center;
     transition: background-color 0.2s ease-in, color 0.2s ease-in;
 }
-.footer-link .fa-brands {
+.footer-link .wrapper .fa-brands {
     font-size: 1.1rem;
     color: var(--black);
     transition: color 0.2s ease-in;
+}
+
+@media (hover: hover) {
+    .footer-link .wrapper:hover {
+        background-color: var(--black);
+    }
+    .footer-link .wrapper:hover .fa-brands {
+        color: var(--white);
+    }
 }
