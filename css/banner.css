@@ -1,4 +1,4 @@
-#banner .section-content {
+#banner {
     position: relative;
     height: 50dvh;
     display: flex;
@@ -7,8 +7,9 @@
     background-image: url('../images/guayaquil-small.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50%;
 }
-.banner-image {
+.banner-blackout {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -26,3 +27,10 @@
 .banner-content h2 {
     margin: 0;
 }
+
+@media (width > 768px) {
+    #banner {
+        background-image: url('../images/guayaquil-big.jpg');
+    }
+}
+
