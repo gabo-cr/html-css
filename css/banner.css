@@ -23,10 +23,12 @@
     background-color: var(--main-color);
     color: var(--white);
     padding: 1rem;
+    border-radius: 5px;
 }
 .banner-content h2 {
     margin: 0;
     font-size: 1.5rem;
+    font-weight: 400;
 }
 
 @media (width > 768px) {
