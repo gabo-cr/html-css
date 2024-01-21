@@ -76,19 +76,29 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <fieldset class="form-group">
-                                <legend>¿Cómo me conociste?*</legend>
-                                <div class="form-group-radio">
-                                    <label for="universidad">Universidad</label>
-                                    <input type="radio" id="universidad" name="knownBy" value="universidad" checked>
-                                    <label for="keepcoding">KeepCoding kick-off</label>
-                                    <input type="radio" id="keepcoding" name="knownBy" value="keepcoding">
-                                    <label for="colegio">Colegio</label>
-                                    <input type="radio" id="colegio" name="knownBy" value="colegio">
-                                    <label for="github">En GitHub</label>
-                                    <input type="radio" id="github" name="knownBy" value="github">
-                                </div>
-                            </fieldset>
+                            <div class="form-group">
+                                <fieldset>
+                                    <legend>¿Cómo me conociste?*</legend>
+                                    <div class="form-group-radio">
+                                        <div class="form-radio">
+                                            <label for="universidad">Universidad</label>
+                                            <input type="radio" id="universidad" name="knownBy" value="universidad" checked>
+                                        </div>
+                                        <div class="form-radio">
+                                            <label for="keepcoding">KeepCoding kick-off</label>
+                                            <input type="radio" id="keepcoding" name="knownBy" value="keepcoding">
+                                        </div>
+                                        <div class="form-radio">
+                                            <label for="colegio">Colegio</label>
+                                            <input type="radio" id="colegio" name="knownBy" value="colegio">
+                                        </div>
+                                        <div class="form-radio">
+                                            <label for="github">En GitHub</label>
+                                            <input type="radio" id="github" name="knownBy" value="github">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -103,13 +113,13 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="moreInfo">Más información*</label>
-                                <textarea name="moreInfo" id="moreInfo" cols="30" rows="10" maxlength="180" placeholder="¿Qué más quieres saber?" required></textarea>
+                                <textarea name="moreInfo" id="moreInfo" rows="4" maxlength="180" placeholder="¿Qué más quieres saber?" required></textarea>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <div class="form-group">
+                            <div class="form-group-check">
                                 <input type="checkbox" name="newsletter" id="newsletter" value="selected">
                                 <label for="newsletter">Suscribirme a la newsletter</label>
                             </div>
@@ -117,9 +127,9 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <div class="form-group">
-                                <input class="btn btn-secondary" type="reset" value="Resetear">
+                            <div class="form-group-btns">
                                 <input class="btn" type="submit" value="Enviar">
+                                <input class="btn btn-secondary" type="reset" value="Resetear">
                             </div>
                         </div>
                     </div>
