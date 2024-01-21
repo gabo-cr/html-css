@@ -1,0 +1,25 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+.col {
+    flex-grow: 1;
+    max-width: 100%;
+    padding: 0 1rem;
+}
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 0 1rem;
+}
+.form-group label, 
+.form-group input,
+.form-group textarea {
+    display: block;
+    width: 100%;
+}

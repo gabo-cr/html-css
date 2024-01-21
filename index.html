@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/footer.css">
     <script src="https://kit.fontawesome.com/60c134a46a.js" crossorigin="anonymous"></script>
 </head>
@@ -47,7 +48,84 @@
                 <h2>Portfolio de Gabriel Chávez Riera</h2>
             </div>
         </section>
-        <section id="contact"></section>
+        <section id="contact">
+            <div class="section-content">
+                <h2 class="section-title blue">Contáctame</h2>
+                <form action="" method="post">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="firstname">Nombre*</label>
+                                <input type="text" name="firstname" id="firstname" placeholder="Nombre" required>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="lastname">Apellidos*</label>
+                                <input type="text" name="lastname" id="lastname" placeholder="Apellidos" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="phonenumber">Teléfono*</label>
+                                <input type="tel" name="phonenumber" id="phonenumber" placeholder="111-123-4567" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <fieldset class="form-group">
+                                <legend>¿Cómo me conociste?*</legend>
+                                <div class="form-group-radio">
+                                    <label for="universidad">Universidad</label>
+                                    <input type="radio" id="universidad" name="knownBy" value="universidad" checked>
+                                    <label for="keepcoding">KeepCoding kick-off</label>
+                                    <input type="radio" id="keepcoding" name="knownBy" value="keepcoding">
+                                    <label for="colegio">Colegio</label>
+                                    <input type="radio" id="colegio" name="knownBy" value="colegio">
+                                    <label for="github">En GitHub</label>
+                                    <input type="radio" id="github" name="knownBy" value="github">
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="githubTag">Tag de GitHub</label>
+                                <input type="text" name="githubTag" id="githubTag" placeholder="Tag de GitHub" pattern="^@[^\s]+">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="moreInfo">Más información*</label>
+                                <textarea name="moreInfo" id="moreInfo" cols="30" rows="10" maxlength="180" placeholder="¿Qué más quieres saber?" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="checkbox" name="newsletter" id="newsletter" value="selected">
+                                <label for="newsletter">Suscribirme a la newsletter</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <input class="btn btn-secondary" type="reset" value="Resetear">
+                                <input class="btn" type="submit" value="Enviar">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
         <a href="https://github.com/gabo-cr" target="_blank" class="footer-link">
