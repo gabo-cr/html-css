@@ -11,6 +11,9 @@
 .header .menu-logo {
     max-width: 50px;
     display: inline-block;
+}
+.header .menu-logo a {
+    display: inline-block;
     padding: 5px;
 }
 .header .menu-logo #logo {
@@ -38,7 +41,7 @@
 .hamb {
     cursor: pointer;
     float: right;
-    padding: 32px 20px;
+    padding: 27px 20px;
 }
 .hamb-line {
     background: var(--white);
@@ -82,4 +85,39 @@
 .side-menu:checked ~ .hamb .hamb-line::after {
     transform: rotate(45deg);
     top:0;
+}
+
+@media (width > 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hamb {
+        display: none;
+    }
+    .nav {
+        width: auto;
+        height: auto;
+        position: relative;
+        overflow: visible;
+        background-color: var(--main-color);
+        max-height: none;
+        transition: none;
+    }
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .menu a {
+        padding: 20px;
+        transition: color 0.2s ease-in;
+    }
+}
+
+@media (hover: hover) {
+    .menu a:hover {
+        color: var(--black);
+    }
 }
