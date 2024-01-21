@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/banner.css">
-    <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/banner.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
     <script src="https://kit.fontawesome.com/60c134a46a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
         <!-- Logo -->
         <div class="menu-logo">
-            <img src="./images/logo.png" alt="Logo de Gabriel Chávez Riera" id="logo">
+            <img src="./assets/images/logo.png" alt="Logo de Gabriel Chávez Riera" id="logo">
         </div>
         <!-- Hamburger icon -->
         <input class="side-menu" type="checkbox" id="side-menu"/>
@@ -41,7 +41,11 @@
                 <p>Actualmente estoy buscando alguna posición donde pueda contribuir de la mejor manera con mis habilidades y experiencia para alcanzar los objetivos de la empresa.</p>
             </div>
         </section>
-        <section id="skills"></section>
+        <section id="skills">
+            <div class="section-content">
+                <h2 class="section-title blue">Habilidades</h2>
+            </div>
+        </section>
         <section id="banner">
             <div class="banner-blackout"></div>
             <div class="banner-content">
@@ -105,7 +109,7 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="githubTag">Tag de GitHub</label>
-                                <input type="text" name="githubTag" id="githubTag" placeholder="Tag de GitHub" pattern="^@[^\s]+">
+                                <input type="text" name="githubTag" id="githubTag" placeholder="@usuario" pattern="^@[^\s]+">
                             </div>
                         </div>
                     </div>
