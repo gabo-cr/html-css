@@ -5,15 +5,17 @@
     --black: #000;
     --white: #E7ECEF;
     --gray: #4B5358;
+}
+* {
     font-size: 18px;
     font-family: 'Nunito Sans';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-*, *:before, *:after {
+*:before, *:after {
     box-sizing: inherit;
-  }
+}
 body {
     margin: 0;
 }

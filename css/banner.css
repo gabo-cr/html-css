@@ -26,6 +26,7 @@
 }
 .banner-content h2 {
     margin: 0;
+    font-size: 1.5rem;
 }
 
 @media (width > 768px) {
