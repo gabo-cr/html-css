@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 *:before, *:after {
     box-sizing: inherit;
@@ -56,7 +57,4 @@ section {
 .bg-dark {
     background-color: var(--tertiary-color);
     color: var(--white);
-}
-#description .section-title {
-    margin: 0 0 0.25rem;
 }
