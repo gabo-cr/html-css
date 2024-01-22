@@ -9,11 +9,12 @@ section#skills {
 }
 .skill-percentage-wrapper {
     width: 100%;
-    height: 20px;
+    height: 24px;
     border: 1px solid var(--gray);
     border-radius: 20px;
 }
 .skill-percentage {
+    position: relative;
     height: 100%;
     width: 100%;
     border: 2px solid var(--white);
@@ -21,41 +22,46 @@ section#skills {
     background-color: var(--secondary-color);
     animation: slideRight 4s;
 }
-.pt-90 {
-    max-width: 90%;
+.pt-90 { max-width: 90%; }
+.pt-80 { max-width: 80%; }
+.pt-70 { max-width: 70%; }
+.pt-60 { max-width: 60%; }
+.pt-50 { max-width: 50%; }
+.pt-40 { max-width: 40%; }
+.pt-30 { max-width: 30%; }
+.pt-20 { max-width: 20%; }
+.pt-10 { max-width: 10%; }
+
+.skill-percentage::after {
+    content: "100%";
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+    height: 100%;
+    text-align: right;
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    animation: slideRight 4s, fadeInSlow 3s;
 }
-.pt-80 {
-    max-width: 80%;
-}
-.pt-70 {
-    max-width: 70%;
-}
-.pt-60 {
-    max-width: 60%;
-}
-.pt-50 {
-    max-width: 50%;
-}
-.pt-40 {
-    max-width: 40%;
-}
-.pt-30 {
-    max-width: 30%;
-}
-.pt-20 {
-    max-width: 20%;
-}
-.pt-10 {
-    max-width: 10%;
-}
+.pt-90::after { content: "90%"; }
+.pt-80::after { content: "80%"; }
+.pt-70::after { content: "70%"; }
+.pt-60::after { content: "60%"; }
+.pt-50::after { content: "50%"; }
+.pt-40::after { content: "40%"; }
+.pt-30::after { content: "30%"; }
+.pt-20::after { content: "20%"; }
+.pt-10::after { content: "10%"; }
 
 @keyframes slideRight {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 100%;
-    }
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+@keyframes fadeInSlow {
+    0% { opacity: 0; }
+    60% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 @media (width > 480px) {
