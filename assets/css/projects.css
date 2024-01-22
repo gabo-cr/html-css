@@ -1,27 +1,37 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 .item {
     box-shadow: 3px 3px 8px 0px var(--soft-gray);
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .item-image {
     height: 170px;
     width: 100%;
     background-position: 50%;
     background-size: cover;
+    border-bottom: 1px solid #dddddd;
 }
-.item-content {
-    padding: 0.5rem 1rem;
+.item-text {
+    padding: 1rem;
 }
-.item-content .item-title {
-    font-size: 1.1rem;
+.item-text .item-title {
+    font-family: 'Nunito sans';
+    font-size: 1rem;
     margin-bottom: 5px;
 }
-.item-content .item-description {
+.item-text .item-description {
     font-size: 0.9rem;
+    text-align: justify;
+    margin-bottom: 5px;
+}
+.item-actions {
+    padding: 0 1rem 1rem;
 }
 
 @media (width > 480px) {
