@@ -6,7 +6,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    height: 235px;
     animation: fadeIn 4s;
 }
 .responsive-iframe {
@@ -22,4 +22,16 @@
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+@media (width > 480px) {
+    #video .section-content {
+        height: 370px;
+    }
+}
+
+@media (width > 768px) {
+    #video .section-content {
+        height: 505px;
+    }
 }
