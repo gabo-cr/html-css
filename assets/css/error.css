@@ -1,0 +1,29 @@
+.error {
+    max-width: 480px;
+    width: 100%;
+    margin: 4rem auto 6rem;
+    text-align: center;
+    padding: 0;
+}
+.error img {
+    max-width: 120px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.error h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+.error p {
+    margin: 0 0 1.5rem;
+}
+.error a {
+    max-width: 120px;
+    margin: 0 auto;
+}
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
