@@ -33,7 +33,6 @@
                 <li><a href="/#description">Resumen</a></li>
                 <li><a href="/proyectos">Proyectos</a></li>
                 <li><a href="/#skills">Habilidades</a></li>
-                <li><a href="/#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -42,8 +41,14 @@
             <div class="section-content">
                 <h1 class="section-title blue">Gabriel Chávez Riera</h1>
                 <p class="section-subtitle orange">Full-Stack Web Developer</p>
-                <p>Desarrollador Web Full-Stack con especial énfasis en React (TypeScript y JavaScript) y Django. Me apasiona crear sitios y aplicaciones web de alta calidad y responsivas en el tiempo adecuado y con resultados excepcionales.</p>
+                <p>Desarrollador Web Full-Stack con especial énfasis en React, Node.js y Django. Me apasiona crear sitios y aplicaciones web de alta calidad y responsivas en el tiempo adecuado y con resultados excepcionales.</p>
                 <p>Actualmente estoy buscando alguna posición donde pueda contribuir de la mejor manera con mis habilidades y experiencia para alcanzar los objetivos de la empresa.</p>
+            </div>
+        </section>
+        <section id="banner">
+            <div class="banner-blackout"></div>
+            <div class="banner-content">
+                <h2>Portfolio de Gabriel Chávez Riera</h2>
             </div>
         </section>
         <section id="skills">
@@ -51,9 +56,15 @@
                 <h2 class="section-title blue">Habilidades</h2>
                 <div class="skills-content">
                     <div class="skill">
-                        <div class="skill-name">React</div>
+                        <div class="skill-name">React (Next.js)</div>
                         <div class="skill-percentage-wrapper">
                             <div class="skill-percentage pt-90"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Node.js (Express.js)</div>
+                        <div class="skill-percentage-wrapper">
+                            <div class="skill-percentage pt-80"></div>
                         </div>
                     </div>
                     <div class="skill">
@@ -62,10 +73,11 @@
                             <div class="skill-percentage pt-80"></div>
                         </div>
                     </div>
+                    
                     <div class="skill">
                         <div class="skill-name">TypeScript</div>
                         <div class="skill-percentage-wrapper">
-                            <div class="skill-percentage pt-90"></div>
+                            <div class="skill-percentage pt-100"></div>
                         </div>
                     </div>
                     <div class="skill">
@@ -74,6 +86,13 @@
                             <div class="skill-percentage pt-100"></div>
                         </div>
                     </div>
+                    <div class="skill">
+                        <div class="skill-name">Python</div>
+                        <div class="skill-percentage-wrapper">
+                            <div class="skill-percentage pt-80"></div>
+                        </div>
+                    </div>
+
                     <div class="skill">
                         <div class="skill-name">HTML</div>
                         <div class="skill-percentage-wrapper">
@@ -86,12 +105,7 @@
                             <div class="skill-percentage pt-90"></div>
                         </div>
                     </div>
-                    <div class="skill">
-                        <div class="skill-name">Python</div>
-                        <div class="skill-percentage-wrapper">
-                            <div class="skill-percentage pt-80"></div>
-                        </div>
-                    </div>
+
                     <div class="skill">
                         <div class="skill-name">Git</div>
                         <div class="skill-percentage-wrapper">
@@ -99,112 +113,31 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <div class="skill-name">SQL</div>
+                        <div class="skill-name">Docker</div>
+                        <div class="skill-percentage-wrapper">
+                            <div class="skill-percentage pt-70"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-name">SQL (PostgreSQL, Oracle...)</div>
                         <div class="skill-percentage-wrapper">
                             <div class="skill-percentage pt-70"></div>
                         </div>
                     </div>
                     <div class="skill">
-                        <div class="skill-name">NoSQL</div>
+                        <div class="skill-name">NoSQL (MongoDB)</div>
                         <div class="skill-percentage-wrapper">
-                            <div class="skill-percentage pt-60"></div>
+                            <div class="skill-percentage pt-70"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Inglés C2</div>
+                        <div class="skill-percentage-wrapper">
+                            <div class="skill-percentage pt-90"></div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="banner">
-            <div class="banner-blackout"></div>
-            <div class="banner-content">
-                <h2>Portfolio de Gabriel Chávez Riera</h2>
-            </div>
-        </section>
-        <section id="contact">
-            <div class="section-content">
-                <h2 class="section-title blue">Contáctame</h2>
-                <form action="" method="post">
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-group">
-                                <label for="firstname">Nombre*</label>
-                                <input type="text" name="firstname" id="firstname" placeholder="Nombre" required>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group">
-                                <label for="lastname">Apellidos*</label>
-                                <input type="text" name="lastname" id="lastname" placeholder="Apellidos" required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-group">
-                                <label for="phonenumber">Teléfono*</label>
-                                <input type="tel" name="phonenumber" id="phonenumber" placeholder="111-123-4567" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-group">
-                                <fieldset>
-                                    <legend>¿Cómo me conociste?*</legend>
-                                    <div class="form-group-radio">
-                                        <div class="form-radio">
-                                            <label for="universidad">Universidad</label>
-                                            <input type="radio" id="universidad" name="knownBy" value="universidad" checked>
-                                        </div>
-                                        <div class="form-radio">
-                                            <label for="keepcoding">KeepCoding kick-off</label>
-                                            <input type="radio" id="keepcoding" name="knownBy" value="keepcoding">
-                                        </div>
-                                        <div class="form-radio">
-                                            <label for="colegio">Colegio</label>
-                                            <input type="radio" id="colegio" name="knownBy" value="colegio">
-                                        </div>
-                                        <div class="form-radio">
-                                            <label for="github">En GitHub</label>
-                                            <input type="radio" id="github" name="knownBy" value="github">
-                                        </div>
-                                    </div>
-                                </fieldset>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-group">
-                                <label for="githubTag">Tag de GitHub</label>
-                                <input type="text" name="githubTag" id="githubTag" placeholder="@usuario" pattern="^@[^\s]+">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-group">
-                                <label for="moreInfo">Más información*</label>
-                                <textarea name="moreInfo" id="moreInfo" rows="4" maxlength="180" placeholder="¿Qué más quieres saber?" required></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-group-check">
-                                <input type="checkbox" name="newsletter" id="newsletter" value="selected">
-                                <label for="newsletter">Suscribirme a la newsletter</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-group-btns">
-                                <input class="btn" type="submit" value="Enviar">
-                                <input class="btn btn-secondary" type="reset" value="Resetear">
-                            </div>
-                        </div>
-                    </div>
-                </form>
             </div>
         </section>
     </main>
