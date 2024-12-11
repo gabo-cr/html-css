@@ -86,12 +86,38 @@
     transform: rotate(45deg);
     top:0;
 }
+/* Language menu */
+.language-menu {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.language-menu li:nth-child(1) {
+    color: var(--white);
+    flex: 1 0 100%;
+    padding-bottom: 10px;
+}
+.language-menu li a {
+    display: block;
+    color: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+}
+.language-menu li a.active {
+    color: var(--main-color);
+    background-color: var(--white);
+}
 
 @media (width > 768px) {
     .header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-left: 5px;
+        padding-right: 20px;
     }
     .hamb {
         display: none;
@@ -104,6 +130,9 @@
         background-color: var(--main-color);
         max-height: none;
         transition: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
     .menu {
         display: flex;
@@ -113,6 +142,40 @@
     .menu a {
         padding: 20px;
         transition: color 0.2s ease-in;
+    }
+    .language-menu {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        border-radius: 5px;
+        border: 1px solid var(--white);
+        padding: 0;
+    }
+    .language-menu li a {
+        padding: 3px;
+    }
+    .language-menu li:nth-child(1) {
+        display: none;
+    }
+    .language-menu li:nth-child(2) a {
+        padding-left: 10px;
+        padding-right: 7px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 3px;
+    }
+    .language-menu li:nth-child(3) a {
+        padding-left: 7px;
+        padding-right: 10px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 0px;
+    }
+    .language-menu li a.active {
+        color: var(--main-color);
+        background-color: var(--white);
     }
 }
 

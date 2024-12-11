@@ -1,3 +1,6 @@
+section#projects {
+    padding: 4rem 1rem;
+}
 .grid {
     display: grid;
     grid-template-columns: 1fr;
